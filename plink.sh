@@ -15,6 +15,7 @@ done
 
 if [ -z "$sampleListFile" ]; then echo "Missing -s sampleListFile"; exit 1; fi
 
+    sampleListFile=$(realpath SampleVCFS.txt)
     cd $outdir
 
     rm tmp.fifo
