@@ -1,4 +1,4 @@
-###
+#!/bin/bash
 export NTHREADS=4
 export outdir="./"
 
@@ -18,7 +18,9 @@ if [ -z "$sampleListFile" ]; then echo "Missing -s sampleListFile"; exit 1; fi
     cd $outdir
 
     rm tmp.fifo
-    mkfifo tmp.fifo; sleep 1;
-    bcftools merge --file-list $sampleListFile --force-samples > tmp.fifo &; sleep 1;
-    
+    mkfifo tmp.fifo
+    sleep 1
+    bcftools merge --file-list $sampleListFile --force-samples > tmp.fifo &
+    sleep 1
+
     plink --vcf tmp.fifo --allow-extra-chr --memory 16268 --threads $NTHREADS --double-id --distance square '1-ibs'
