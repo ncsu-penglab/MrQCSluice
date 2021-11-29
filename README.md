@@ -1,3 +1,8 @@
+# **MrQCSluice**
+**M**apped **R**eads **Q**uality **C**ontrol **S**ample **L**abels **U**s**i**ng SNP **C**all**e**r
+ 
+The purpose of MrQCSluice is to confirm correct labeling of RNA-Seq samples. 
+We identify potentially mislabeled samples using the assumption that samples from the same biological source should have highly similar SNPs evident in their RNA-Seq. To streamline this quality control step, MrQCSluice offers a set of shell scripts designed to calculate pairwise SNP distance between samples using mapped BAM files as input.
 
 # Before you start
  1. Dependencies: Slurm sbatch, bcftools, bgzip, tabix, and plink are available commands in your PATH.
