@@ -1,6 +1,7 @@
 
 # Before you start
  1. Dependencies: Slurm sbatch, bcftools, bgzip, tabix, and plink are available commands in your PATH.
+ ##### tested with samtools 1.13
  2. Make sure the input bam files are sorted.
 
 # Example:
