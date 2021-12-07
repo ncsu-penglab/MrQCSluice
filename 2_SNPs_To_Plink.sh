@@ -6,7 +6,7 @@
 export NTHREADS=4
 export outdir="./"
 
-while getopts ":hs:r:@:e:o:w:" opt; do
+while getopts ":hs:@:e:o:w:" opt; do
   case $opt in
     s) export sampleListFile=$OPTARG ;;
     @) export NTHREADS=$OPTARG ;;
