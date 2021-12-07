@@ -18,7 +18,6 @@ while getopts ":hs:r:@:e:o:w:" opt; do
 done
 
 if [ -z "$sampleListFile" ]; then echo "Missing -s sampleListFile"; exit 1; fi
-if [ -z "$ref" ]; then echo "Missing -r Reference genome"; exit 1; fi
 
 export batchscript=$(realpath $0)
 sbatch -c $NTHREADS --mem=24G plink.sh -s $sampleListFile -@ $NTHREADS -o $outdir
