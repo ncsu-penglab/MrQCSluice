@@ -10,7 +10,7 @@ It will identify potentially mislabeled samples based on the assumption that sam
 
 # Before you start
  1. Dependencies: Slurm sbatch, bcftools, bgzip, tabix, and plink are available commands in your PATH.
- #####  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tested with samtools 1.13; tested with bcftools 1.13; tested with htslib 1.13; tested with plink 1.90
+ #####  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tested with [samtools 1.13](https://github.com/samtools/samtools/releases/tag/1.13); tested with [bcftools 1.13](https://github.com/samtools/bcftools/releases/tag/1.13); tested with [htslib 1.13](https://github.com/samtools/htslib/releases/tag/1.13); tested with [plink 1.90](https://www.cog-genomics.org/plink/)
  
  2. Make sure the input bam files are sorted.
 
